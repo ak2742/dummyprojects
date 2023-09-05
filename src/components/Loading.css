@@ -1,0 +1,105 @@
+.loading-barr {
+    display: flex;
+    flex-direction: row;
+    height: 18px;
+    width: 50px;
+    padding: 0;
+}
+
+.diskk {
+    opacity: 0;
+    transition: all 0.5s;
+    animation: fadeIn 1.5s infinite;
+    -webkit-animation: fadeIn 1.5s infinite;
+    -moz-animation: fadeIn 1.5s infinite;
+    -o-animation: fadeIn 1.5s infinite;
+    -ms-animation: fadeIn 1.5s infinite;
+    margin: 2px;
+    background: gray;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+}
+
+#disk1 {
+    animation-delay: 0s;
+}
+
+#disk2 {
+    animation-delay: 0.5s;
+}
+
+#disk3 {
+    animation-delay: 1s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
