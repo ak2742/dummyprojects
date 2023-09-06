@@ -1,0 +1,10 @@
+#messages::-webkit-scrollbar {
+    display: none;
+}
+
+#messages {
+    overflow-y: auto;
+    height: 70vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
