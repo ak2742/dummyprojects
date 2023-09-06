@@ -1,0 +1,15 @@
+extends base.pug
+
+block div.content
+        div.content
+            div#outerType.section.flex
+                h1#typeText.titleGp
+            div.section.flex
+                div.itemsIn.flex
+                    div.item
+                        img( src=imgUri alt=name)
+                        h2( onclick="my_desc()") #{name}
+                        span #{desc}
+
+        script
+            include ../js/type.js

@@ -1,0 +1,10 @@
+extends base.pug
+
+block div.content
+        div.content
+            div.section.flex.detailsDiv
+                button( onclick="goHome()" class="btn") Home
+                div.postDetails.flex
+                        img( src=imgUri alt=name)
+                        h1 #{name}
+                        span #{desc}

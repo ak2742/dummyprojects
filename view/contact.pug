@@ -1,0 +1,27 @@
+extends base.pug
+
+block div.content
+        div.content
+            div.section.flex
+                h2.titleGrp Leave a message here
+
+                div( id="formIn" class="flex")
+                    form( action="/thanks" method="post" id="myForm")
+                        div
+                            label( for="fname") First Name: 
+                                input( type="text" name="fname" id="fname" pattern="[A-Za-z]{3,}" title="Please enter a valid name" placeholder="Enter your first name" required)
+                        div
+                            label( for="lname") Last Name: 
+                                input( type="text" name="lname" id="lname" pattern="[A-Za-z]{3,}" title="Please enter a valid name" placeholder="Enter your last name" required)
+                        div
+                            label( for="phone") Phone: 
+                                input( type="tel" name="phone" id="phone" pattern="^\\d{10}$" title="Please enter a valid phone number" placeholder="Enter your phone number" required)
+                        div
+                            label( for="mail") Mail ID: 
+                                input( type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" title="Please enter a valid email address" placeholder="Enter your mail ID" required)
+                        div
+                            label( for="message" id="moreAbout") Message: 
+                            textarea( name="message" id="message" rows=6 columns=7 placeholder="Feel free to write something here" required)
+                        div#btns
+                            input( type="submit" id="submit" value="Submit" class="btn")
+                            input( type="reset" id="reset" value="Reset" class="btn")
